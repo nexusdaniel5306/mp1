@@ -1,13 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated introduction to the architecture of six ancient civilizations.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>Monument &amp; Memory | Ancient Architecture</title>
+</head>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand nav-link" href="#introduction" aria-label="Monument and Memory home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Monument <em>&amp;</em> Memory</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <a class="nav-link active" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#collection">Collection</a>
+            <a class="nav-link" href="#principles">Principles</a>
+            <a class="nav-link" href="#film">Film</a>
+            <a class="nav-link" href="#sources">Sources</a>
+        </div>
+    </nav>
+
+    <header class="hero section-observer" id="introduction">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <p class="eyebrow">A study in stone, timber, and time</p>
+            <h1>Architecture<br>outlives empires.</h1>
+            <p class="hero-summary">Across continents, ancient builders turned structure into memory. Explore six civilizations through the forms they left behind.</p>
+            <a class="text-link nav-link" href="#collection">Enter the collection <span aria-hidden="true">&#8595;</span></a>
+        </div>
+        <p class="hero-caption">The Great Wall at Badaling, China</p>
+    </header>
+
+    <main>
+        <section class="intro-stripe stripe">
+            <div class="container intro-grid reveal">
+                <p class="section-number">01 &mdash; The premise</p>
+                <div>
+                    <h2>Built to hold more than weight.</h2>
+                    <p class="lead">Ancient architecture carried belief, power, civic identity, and technical knowledge. Its enduring forms reveal how civilizations understood the world—and their place within it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection stripe section-observer" id="collection">
+            <div class="container section-heading reveal">
+                <div><p class="eyebrow">Selected monuments</p><h2>A global collection</h2></div>
+                <p>Move through three landmark works, each shaped by a different relationship between engineering, landscape, and ritual.</p>
+            </div>
+            <div class="carousel reveal" aria-roledescription="carousel" aria-label="Featured monuments">
+                <div class="carousel-track">
+                    <article class="slide active" aria-hidden="false">
+                        <img src="assets/architecture/pantheon.jpg" alt="The columned entrance and circular rotunda of the Pantheon in Rome">
+                        <div class="slide-shade"></div>
+                        <div class="slide-content">
+                            <p class="slide-index">01 / 03</p><p class="eyebrow">Rome · c. 125 CE</p><h3>The Pantheon</h3>
+                            <p>A perfectly proportioned interior beneath the largest surviving unreinforced concrete dome of antiquity.</p>
+                            <button class="detail-button" type="button" data-modal="pantheon">View field note</button>
+                        </div>
+                    </article>
+                    <article class="slide" aria-hidden="true">
+                        <img src="assets/architecture/great-wall.jpg" alt="The Great Wall crossing green mountain ridges at Badaling, China">
+                        <div class="slide-shade"></div>
+                        <div class="slide-content">
+                            <p class="slide-index">02 / 03</p><p class="eyebrow">China · 3rd century BCE–17th century CE</p><h3>The Great Wall</h3>
+                            <p>A vast defensive system in which walls, passes, and towers follow the terrain across northern China.</p>
+                            <button class="detail-button" type="button" data-modal="wall">View field note</button>
+                        </div>
+                    </article>
+                    <article class="slide" aria-hidden="true">
+                        <img src="assets/architecture/angkor-wat.jpg" alt="The tiered stone towers and galleries of Angkor Wat in Cambodia">
+                        <div class="slide-shade"></div>
+                        <div class="slide-content">
+                            <p class="slide-index">03 / 03</p><p class="eyebrow">Khmer Empire · 12th century CE</p><h3>Angkor Wat</h3>
+                            <p>A temple-city organized as a sacred diagram, binding monumental stonework to an engineered water landscape.</p>
+                            <button class="detail-button" type="button" data-modal="angkor">View field note</button>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-arrow previous" type="button" aria-label="Previous monument"><span aria-hidden="true">&#8592;</span></button>
+                <button class="carousel-arrow next" type="button" aria-label="Next monument"><span aria-hidden="true">&#8594;</span></button>
+                <div class="carousel-dots" aria-label="Choose a slide">
+                    <button class="active" type="button" aria-label="Show slide 1" aria-current="true"></button>
+                    <button type="button" aria-label="Show slide 2" aria-current="false"></button>
+                    <button type="button" aria-label="Show slide 3" aria-current="false"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="principles stripe section-observer" id="principles">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div><p class="eyebrow">Ways of building</p><h2>Three enduring ideas</h2></div>
+                    <p>Monuments differ in material and purpose, yet the same architectural ambitions recur across place and time.</p>
+                </div>
+                <div class="principle-grid">
+                    <article class="principle-card reveal"><span class="line-icon icon-span" aria-hidden="true"></span><p class="card-number">I</p><h3>Span</h3><p>Roman arches, vaults, and concrete enclosed spaces at a scale that transformed civic life.</p></article>
+                    <article class="principle-card reveal"><span class="line-icon icon-axis" aria-hidden="true"></span><p class="card-number">II</p><h3>Axis</h3><p>Chinese complexes used layered thresholds and strong central alignments to express order and hierarchy.</p></article>
+                    <article class="principle-card reveal"><span class="line-icon icon-landscape" aria-hidden="true"></span><p class="card-number">III</p><h3>Landscape</h3><p>From Petra to Angkor, terrain and water became active parts of the architectural composition.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="fixed-image stripe" aria-label="Architectural quotation">
+            <div class="fixed-image-content reveal"><p class="eyebrow">Material intelligence</p><blockquote>Every monument begins as a negotiation—with gravity, climate, ritual, and time.</blockquote></div>
+        </section>
+
+        <section class="atlas stripe">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div><p class="eyebrow">Across civilizations</p><h2>An atlas of forms</h2></div><p>Six places, six architectural responses to permanence.</p>
+                </div>
+                <div class="atlas-grid">
+                    <article class="atlas-card reveal"><img src="assets/architecture/pantheon.jpg" alt="Pantheon entrance in Rome" loading="lazy"><div><p>Rome</p><h3>Pantheon</h3><span>Concrete &amp; volume</span></div></article>
+                    <article class="atlas-card reveal"><img src="assets/architecture/great-wall.jpg" alt="Great Wall of China at Badaling" loading="lazy"><div><p>China</p><h3>Great Wall</h3><span>Terrain &amp; defense</span></div></article>
+                    <article class="atlas-card reveal"><img src="assets/architecture/parthenon.jpg" alt="Doric columns of the Parthenon" loading="lazy"><div><p>Greece</p><h3>Parthenon</h3><span>Order &amp; proportion</span></div></article>
+                    <article class="atlas-card reveal"><img src="assets/architecture/karnak.jpg" alt="Massive decorated columns inside Karnak temple" loading="lazy"><div><p>Egypt</p><h3>Karnak</h3><span>Procession &amp; stone</span></div></article>
+                    <article class="atlas-card reveal"><img src="assets/architecture/angkor-wat.jpg" alt="Stone towers of Angkor Wat" loading="lazy"><div><p>Khmer Empire</p><h3>Angkor Wat</h3><span>Cosmology &amp; water</span></div></article>
+                    <article class="atlas-card reveal"><img src="assets/architecture/petra.jpg" alt="The Treasury facade carved into Petra's sandstone" loading="lazy"><div><p>Nabataea</p><h3>Petra</h3><span>Rock &amp; exchange</span></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="film stripe section-observer" id="film">
+            <div class="container film-grid">
+                <div class="film-copy reveal"><p class="eyebrow">In motion</p><h2>Walking the Acropolis</h2><p>Architecture is understood in sequence: approach, threshold, compression, and release. This short archival tour moves through the Parthenon and its setting.</p><p class="film-credit">Film by Ian and Wendy Sewell, 2002 · Wikimedia Commons</p></div>
+                <div class="video-frame reveal"><video controls preload="metadata" poster="assets/architecture/parthenon.jpg"><source src="assets/architecture/acropolis.webm" type="video/webm"><source src="assets/architecture/acropolis.ogv" type="video/ogg">Your browser does not support HTML5 video.</video></div>
+            </div>
+        </section>
+
+        <section class="sources stripe section-observer" id="sources">
+            <div class="container sources-grid">
+                <div class="reveal"><p class="eyebrow">Credits &amp; further reading</p><h2>Sources</h2><p>Historical summaries were informed by the UNESCO World Heritage Centre. Media is locally hosted for this project and remains subject to its original license.</p></div>
+                <div class="source-lists reveal">
+                    <div><h3>Research</h3><a href="https://whc.unesco.org/en/list/91" target="_blank" rel="noreferrer">Historic Centre of Rome</a><a href="https://whc.unesco.org/en/list/438" target="_blank" rel="noreferrer">The Great Wall</a><a href="https://whc.unesco.org/en/list/668" target="_blank" rel="noreferrer">Angkor</a><a href="https://whc.unesco.org/en/list/326" target="_blank" rel="noreferrer">Petra</a></div>
+                    <div><h3>Media</h3><a href="https://commons.wikimedia.org/wiki/File:Pantheon_(45696758404).jpg" target="_blank" rel="noreferrer">Pantheon · Chad Greiter</a><a href="https://commons.wikimedia.org/wiki/File:Badaling_China_Great-Wall-of-China-01.jpg" target="_blank" rel="noreferrer">Great Wall · CEphoto, Uwe Aranas</a><a href="https://commons.wikimedia.org/wiki/File:Parthenon-Acropolis_of_Athens.jpg" target="_blank" rel="noreferrer">Parthenon · Yair Haklai</a><a href="https://commons.wikimedia.org/wiki/File:Karnak_temple_complex_(14208274252).jpg" target="_blank" rel="noreferrer">Karnak · Jorge Láscar</a><a href="https://commons.wikimedia.org/wiki/File:003_Architecture_of_the_Angkor_Wat,_Cambodia.jpg" target="_blank" rel="noreferrer">Angkor Wat · Anandajoti</a><a href="https://commons.wikimedia.org/wiki/File:The_treasury_of_Petra.jpg" target="_blank" rel="noreferrer">Petra · Ahmad AlHasanat</a><a href="https://commons.wikimedia.org/wiki/File:Athens_Acropolis_Parthenon_day.ogv" target="_blank" rel="noreferrer">Acropolis film · Ian &amp; Wendy Sewell</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand nav-link" href="#introduction"><span class="brand-mark" aria-hidden="true"></span><span>Monument <em>&amp;</em> Memory</span></a><p>A digital study of ancient architecture.</p></div><div class="social-links" aria-label="Social media links"><a href="https://www.instagram.com/smithsonian/" target="_blank" rel="noreferrer" aria-label="Smithsonian on Instagram"><span class="social-icon instagram" aria-hidden="true"></span></a><a href="https://www.youtube.com/@Smithsonian" target="_blank" rel="noreferrer" aria-label="Smithsonian on YouTube"><span class="social-icon youtube" aria-hidden="true"></span></a><a href="https://www.facebook.com/Smithsonian" target="_blank" rel="noreferrer" aria-label="Smithsonian on Facebook"><span class="social-icon facebook" aria-hidden="true">f</span></a></div><p class="footer-note">Created for CS 409 · 2026</p></div></footer>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-copy" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-panel" role="document"><button class="modal-close" type="button" data-close-modal aria-label="Close field note">&#215;</button><p class="eyebrow">Field note</p><h2 id="modal-title"></h2><p id="modal-copy"></p><dl class="modal-facts"><div><dt>Material</dt><dd id="modal-material"></dd></div><div><dt>Central idea</dt><dd id="modal-idea"></dd></div></dl></div></div>
+</body>
 </html>
